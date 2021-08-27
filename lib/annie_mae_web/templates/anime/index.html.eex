@@ -1,0 +1,8 @@
+<%= for anime <- @animes do %>
+    <p>Title: <%= anime.title %></p>
+    <p>Release Year: <%= anime.release_year %></p>
+    <p>Number of episodes: <%= anime.number_of_episodes %></p>
+    <p>Submitted by: <%= anime.submitted_by %></p>
+    <p>Created at: <%= anime.inserted_at %></p>
+    <hr />
+<% end %>

@@ -1,0 +1,8 @@
+<form action="/anime" method="POST">
+    <input type="hidden" value="<%= @token %>" name="_csrf_token" />
+    <label>Title: <input type="text" name="anime[title]" placeholder="Cowboy Bebop" /></label>
+    <label>Number of episodes: <input type="text" name="anime[number_of_episodes]" /></label>
+    <label>Release year: <input type="text" name="anime[release_year]" /></label>
+    <label>Submitted by: <input type="text" name="anime[submitted_by]" /></label>
+    <input type="submit" />
+</form>

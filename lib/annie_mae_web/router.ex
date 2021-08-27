@@ -16,6 +16,7 @@ defmodule AnnieMaeWeb.Router do
   scope "/", AnnieMaeWeb do
     pipe_through :browser
 
+    resources "/anime", AnimeController
     get "/", PageController, :index
   end
 
